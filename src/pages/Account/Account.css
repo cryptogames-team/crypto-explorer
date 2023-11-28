@@ -1,0 +1,198 @@
+.all_container {
+    
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica,Arial,Helvetica;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#F2F3FB;
+}
+.account_info_container_all {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    background-color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.account_info_container {
+    width: 80%;
+    max-width: 1400px;
+    background-color: white;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+
+}
+.account_name_info_container {
+ width: 50%;
+ height: 100%;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+
+}
+.account_name {
+    font-size: 28px;
+}
+.create_date {
+    font-size: 14px;
+}
+.account_name_info_container img {
+    width: 100px;
+    height: 100px;
+}
+.account_name_info {
+    display: flex;
+    flex-direction: column;
+}
+.account_balance_info {
+width: 50%;
+height: 100%;
+display: flex;
+align-items: center;
+}
+.total_balance {
+    font-size: 18px;
+    font-weight: 550;
+    color: #1145A8;
+}
+
+.resource_container {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    width: 80%;
+    max-width: 1400px;
+    height: 340px;
+    background-color: white;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.resource_title {
+    width: 95%;
+    height: 60px;
+}
+.wallet_img {
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+}
+.resource_title_h2{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+.resource_all_data_container {
+    height: 280px;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+
+}
+.resource_data_container{
+    width: 50%;
+    height: 100%;
+}
+.resource_table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+.resource_table td {
+    padding: 10px;
+}
+.resource_text{
+    width: 50%;
+}
+.resource_info{
+    width: 50%;
+}
+.resource_graph {
+    margin-left: 20px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ram_chart_container{
+
+z-index: 1;
+}
+.ram_chart_data{
+    z-index: 0;
+}
+.ram_lable {
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    font-weight: 550;
+}
+.cpu_lable {
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    font-weight: 550;
+}
+.net_lable {
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    font-weight: 550;
+}
+
+.transactions_container {
+    max-width: 1400px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    width: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.transactions_header{
+    width: 95%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.transaction_img {
+    width: 35px;
+    height: 35px;
+}
+.transactions_data_container{
+    width: 95%;
+    height: auto;
+}
+.transaction_table{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+.transaction_table th {
+    padding: 10px;
+}
+
+.tx_th {
+    width: 10%;
+}
+.date_th {
+    width: 20%;
+}
+.action_th {
+    width: 15%;
+}
+.data_th {
+    width: 40%;
+}
+.memo_th {
+    width: 15%;
+}
