@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.307d497e.css",
+    "main.js": "/static/js/main.9def581a.js",
+    "static/js/787.7caea3da.chunk.js": "/static/js/787.7caea3da.chunk.js",
+    "static/media/hep_white_name_logo.png": "/static/media/hep_white_name_logo.6b47349a4ec77c68a01a.png",
+    "static/media/hep_logo.png": "/static/media/hep_logo.e7d4ab579285fa3fb8cf.png",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.307d497e.css.map": "/static/css/main.307d497e.css.map",
+    "main.9def581a.js.map": "/static/js/main.9def581a.js.map",
+    "787.7caea3da.chunk.js.map": "/static/js/787.7caea3da.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.307d497e.css",
+    "static/js/main.9def581a.js"
+  ]
+}
