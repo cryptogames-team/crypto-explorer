@@ -23,7 +23,7 @@ const Vote = () => {
       return () => clearInterval(intervalId);
     }, []);
     const fetchDataFromHep = async () => {
-      const rpc = new JsonRpc('http://14.63.34.160:8888');
+      const rpc = new JsonRpc('https://heptagon-producer1.store');
       try {
         const info = await rpc.get_info();
         const latestBlockNum = info.head_block_num;
@@ -66,7 +66,7 @@ const Vote = () => {
       
     });
     const GetProducers = async () => {
-      const rpc = new JsonRpc('http://14.63.34.160:8888');
+      const rpc = new JsonRpc('https://heptagon-producer1.store');
       let producerLength = 0;
       let producerData;
   

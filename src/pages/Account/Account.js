@@ -29,7 +29,7 @@ const [net_per, setnet_per] = useState('');
 const [Actions, setActions] = useState([]);
 useEffect(()=>{
   const fetchDataFromHep = async () => {
-    const rpc = new JsonRpc('http://14.63.34.160:8888');
+    const rpc = new JsonRpc('https://heptagon-producer1.store');
     let actions = null;
     let actionsLength = 0;
     while(actionsLength < 1){

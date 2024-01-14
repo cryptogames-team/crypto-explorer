@@ -24,7 +24,7 @@ const Home = () => {
   }, []);
 
   const fetchDataFromHep = async () => {
-    const rpc = new JsonRpc('http://14.63.34.160:8888');
+    const rpc = new JsonRpc('https://heptagon-producer1.store');
     const signatureProvider = new JsSignatureProvider(['5K8Usi9sYmkBSBpLsHeqEGQ8K3vAxBoUWrTnxRfLmDfeAwys93Q']);
     try {
       const info = await rpc.get_info();
@@ -40,7 +40,7 @@ const Home = () => {
     }
   };
   const GetProducers = async () => {
-    const rpc = new JsonRpc('http://14.63.34.160:8888');
+    const rpc = new JsonRpc('https://heptagon-producer1.store');
     let producerLength = 0;
     let producerData;
 

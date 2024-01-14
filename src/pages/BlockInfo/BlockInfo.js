@@ -20,7 +20,7 @@ const BlockInfo = () => {
     const [TotalNetUsed,setTotalNetUsed] = useState(0);
     const [TransactionsData,setTransactionsData] = useState([]);
     const fetchDataAgain = async (change_block) => {
-      const rpc = new JsonRpc('http://14.63.34.160:8888');
+      const rpc = new JsonRpc('https://heptagon-producer1.store');
       
       try {
         console.log(change_block)
@@ -85,7 +85,7 @@ const BlockInfo = () => {
     ];
     useEffect(()=>{
     const fetchDataFromHep = async () => {
-      const rpc = new JsonRpc('http://14.63.34.160:8888');
+      const rpc = new JsonRpc('https://heptagon-producer1.store');
     
       try {
         SetBlockNumInt(blockNum_int);

@@ -32,7 +32,7 @@ const Transaction = () => {
     const { Txn } = useParams();
     useEffect(()=>{
     const fetchDataFromHep = async () => {
-        const rpc = new JsonRpc('http://14.63.34.160:8888');
+        const rpc = new JsonRpc('https://heptagon-producer1.store');
       
         try {
           const transaction_data = await rpc.history_get_transaction(Txn);

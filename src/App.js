@@ -115,7 +115,7 @@ const handleSearch = async() => {
       const remainingText = inputData.slice(1);
       navigate(`/BlockInfo/${remainingText}`);
     }else if(inputData.startsWith('EOS')){
-      const rpc = new JsonRpc('http://14.63.34.160:8888');
+      const rpc = new JsonRpc('https://heptagon-producer1.store');
       try {
         const result = await rpc.history_get_key_accounts(inputData);
         const accountName = result.account_names[0];
