@@ -182,7 +182,7 @@ const handleSearch = async() => {
         <Route path="/" element={<Home />} />
         <Route path="/Account/:AccountName" element={<Account />} />
         <Route path="/Account" element={<Account />} />
-        <Route path="/Vote" element={<Vote />} />
+        <Route path="/Vote" element={<Vote isLogin={isLogin}/>} />
         <Route path="/BlockInfo/:blockNum" element={<BlockInfo />} />
         <Route path="/Transaction/:Txn" element={<Transaction />} />
         <Route path="/BlockError" element={<BlockError />} />

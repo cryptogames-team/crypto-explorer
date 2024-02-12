@@ -6,7 +6,7 @@ import link_img from '../../assets/web.png'
 import { Link } from 'react-router-dom';
 import './Vote.css';
 
-const Vote = () => {
+const Vote = (props) => {
     const [ModalState, setModalState] = useState(false); 
     const [producers, setProducers] = useState([]);
     const [blockProducer, setBlockProducer] = useState('');
@@ -36,7 +36,7 @@ const Vote = () => {
     const fetchUserData = async () => {
       if(isLogin == false){
         console.log("dd")
-      const url = 'http://cryptoexplorer.store/userdata';
+        const url = 'http://cryptoexplorer.store/userdata';
         try {
           const response = await fetch(url, {
             method: 'POST',
@@ -64,7 +64,7 @@ const Vote = () => {
         fetchUserData();
       }
       
-    });
+    },[isLogin]);
     const GetProducers = async () => {
       const rpc = new JsonRpc('https://heptagon-producer1.store');
       let producerLength = 0;
@@ -109,7 +109,7 @@ const Vote = () => {
       setVoteID(result.transaction_id)
     }
     const handleVote = async() => {
-      if(isLogin){
+      if(props.isLogin){
         const datas = {
           voterPrivateKey : '5Jt6Tf3s5CWjtbG1wWaQNGBa9vp1R2zxSkKC2AK8rMJGsXTfWqj',
            voterName : 'producer4',
