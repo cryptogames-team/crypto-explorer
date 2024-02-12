@@ -64,7 +64,7 @@ const Vote = (props) => {
         fetchUserData();
       }
       
-    },[isLogin]);
+    });
     const GetProducers = async () => {
       const rpc = new JsonRpc('https://heptagon-producer1.store');
       let producerLength = 0;
